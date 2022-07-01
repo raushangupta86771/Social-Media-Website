@@ -1,0 +1,18 @@
+.Home {
+    position: relative;
+    display: grid;
+    grid-template-columns: 18rem auto 15rem;
+    gap: 1rem;
+}
+
+@media (orientation: portrait) {
+    .Home {
+        grid-template-columns: auto;
+    }
+}
+
+@media (orientation: 500px) {
+    .Home {
+        grid-template-columns: auto;
+    }
+}

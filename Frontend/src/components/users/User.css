@@ -1,0 +1,17 @@
+.name{
+    color: black;
+}
+
+.fc-button{
+    height: 2rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 5rem;
+}
+
+.UnfollowButton{
+    color: var(--orange);
+    border: 2px solid var(--orange);
+    cursor: pointer;
+    background: transparent;
+}
