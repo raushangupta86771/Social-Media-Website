@@ -8,6 +8,14 @@
     border-radius: 0.rem;
 }
 
+.adj-mm{
+    align-items: center;
+    display: flex;
+    text-align: center;
+    margin: auto;
+    color: darkcyan;
+}
+
 .follower{
     display: flex;
     justify-content: space-between;

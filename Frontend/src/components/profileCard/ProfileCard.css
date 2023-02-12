@@ -1,11 +1,12 @@
 .ProfileCard {
+    /* height: 6px; */
     margin-top: 10px;
     display: flex;
     border-radius: 1.5rem;
     flex-direction: column;
     position: relative;
     overflow-x: clip;
-    background: var(--cardColor);
+    background-image: radial-gradient(circle, #dde8d9, #d0ead8, #c0ebdc, #aeede5, #9bedf2);
 }
 
 .profileImages {
@@ -28,6 +29,12 @@
     position: absolute;
     bottom: -3rem;
     box-shadow: var(--profileShadow);
+}
+
+.adj-edit-icon{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
 }
 
 .profileName {
@@ -83,4 +90,10 @@
     display: flex;
     margin-top: 1rem;
     margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 767px){
+    .ProfileCard{
+        display: none !important;
+    }
 }

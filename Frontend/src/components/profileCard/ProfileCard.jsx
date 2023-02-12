@@ -4,19 +4,19 @@ import Profile from "../../img/profileImg.jpg"
 import "./ProfileCard.css"
 import "../profileside/ProfileSide"
 import { useSelector } from "react-redux"
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom"
 
-const ProfileCard = ({location}) => {
+const ProfileCard = ({ location }) => {
 
   const { user } = useSelector((state) => state.authReducer.authData);
-  const posts  = useSelector((state) => state.postReducer.posts);
+  const posts = useSelector((state) => state.postReducer.posts);
   const serverPublic = process.env.REACT_APP_PUBLIC_FOLDER; //for accesseing public image folder
   console.log(user);
 
   return (
     <div className='ProfileCard'>
       <div className='profileImages'>
-        <img src={user.coverPicture ? serverPublic + user.coverPicture : serverPublic + "defaultCover.jpg"} alt="" />
+        <img src={user.coverPicture ? serverPublic + user.coverPicture : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS18VEnnxilzuz5ts_2P4QWAsPyl4d7AQurTQ&usqp=CAU"} alt="" />
         <img src={user.profilePicture ? serverPublic + user.profilePicture : serverPublic + "defaultprofile.jpg"} alt="" />
       </div>
 
@@ -39,14 +39,14 @@ const ProfileCard = ({location}) => {
           </div>
 
           {
-            location==="profilePage" && (
+            location === "profilePage" && (
               <>
                 <div className='vl'>
 
                 </div>
 
                 <div className='follow'>
-                  <span>{posts.filter((post)=>post.userId === user._id).length}</span>
+                  <span>{posts.filter((post) => post.userId === user._id).length}</span>
                   <span>Posts</span>
                 </div>
               </>
@@ -57,8 +57,8 @@ const ProfileCard = ({location}) => {
         <hr />
       </div>
       {
-        location==="profilePage" ? '' : (
-          <span><Link style={{textDecoration:"none", color:"inherit"}} to = {`/profile/${user._id}`}>My Profile</Link>
+        location === "profilePage" ? '' : (
+          <span ><Link className='adj-text-color' style={{ textDecoration: "none" }} to={`/profile/${user._id}`}><img src='https://cdn-icons-png.flaticon.com/512/166/166256.png' className='adj-edit-icon'/></Link>
           </span>
         )
       }

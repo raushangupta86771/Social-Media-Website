@@ -17,7 +17,7 @@
 .App{
   overflow: hidden;
   color: var(--black);
-  background: #f3f3f3;
+  background-image: radial-gradient(circle, #dde8d9, #d0ead8, #c0ebdc, #aeede5, #9bedf2);
   padding: 1rem 1rem;
 }
 
@@ -26,7 +26,7 @@
   width: 22rem;
   height: 14rem;
   border-radius: 50%;
-  background: #a6ddf0;
+  background: #f0baba;
   filter: blur(72px);
 }
 
@@ -34,11 +34,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: rgb(242, 241, 241);
   border: none;
   cursor: pointer;
   border-radius: 0.7rem;
-  background: var(--buttonBg);
+  background-color:rgb(173, 99, 242) ;
   transition: all 100ms ease-out;
 }
 

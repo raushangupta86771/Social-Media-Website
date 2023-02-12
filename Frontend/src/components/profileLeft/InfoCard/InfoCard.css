@@ -30,3 +30,15 @@
     margin-top: 4rem;
     align-self: flex-end;
 }
+
+@media only screen and (max-width: 767px)
+{
+    .InfoCard
+    {
+        justify-content: center;
+        /* margin: auto; */
+        width: 65%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

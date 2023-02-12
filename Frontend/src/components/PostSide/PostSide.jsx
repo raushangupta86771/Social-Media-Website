@@ -5,8 +5,8 @@ import "./PostSide.css"
 
 const PostSide = () => {
   return (
-    <div className='PostSide'>
-        <PostShare/>
+    <div className='PostSide adj-visi-post'>
+        {/* <PostShare/> */}
         <Posts/>
     </div>
   )

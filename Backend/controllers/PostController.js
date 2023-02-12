@@ -21,7 +21,6 @@ export const createPost = async (req, res) => {
 
 export const getPost = async (req, res) => {
     const id = req.params.id;
-
     try {
         const post = await PostModel.findById(id);
         res.status(200).json(post);
@@ -35,11 +34,13 @@ export const getPost = async (req, res) => {
 
 export const getSinglePost = async (req, res) => {
     const id = req.params.id;
+    // console.log('hello')
 
     try {
         const post = await PostModel.findById(id);
-        res.status(200).json(post.likes);
+        res.status(200).json(post);
     } catch (error) {
+        console.log(error)
         res.status(500).json(error);
     }
 };

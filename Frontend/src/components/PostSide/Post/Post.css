@@ -6,6 +6,10 @@
     border-radius: 1rem;
     gap: 1rem;
 }
+.like-unlike{
+    width: 2rem;
+    height: 2rem;
+}
 
 .Post>img{
     width: 100%;

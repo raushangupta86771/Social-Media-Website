@@ -1,68 +1,80 @@
-.Auth{
-    display:flex ;
+.Auth {
+    display: flex;
     justify-content: center;
     align-items: center;
-    height:100vh ;
+    height: 100vh;
     gap: 4rem;
     position: relative;
 }
 
-.Auth>div{
+.Auth>div {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.a-left{
+.a-right {
+    background-image: radial-gradient(circle, #fbd8f0, #e4dafb, #c9ddfd, #b4dff4, #abdfe2);
+    border-radius: 12px;
+}
+
+.a-left {
     gap: 2rem;
 }
-.a-left>img{
+
+.a-left>img {
     display: flex;
     align-self: flex-start;
 }
-.logo{
+
+.logo {
     margin-top: 2rem;
     width: 4rem;
 }
-.name{
+
+.name {
     color: orange;
 }
 
-.infoForm{
+.infoForm {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 2rem;
 }
-.info{
+
+.info {
     border: none;
     outline: none;
-    background-color: var(--inputColor);
+    /* background-color: var(--inputColor); */
     border-radius: 8px;
     padding: 20px;
     flex: 1;
 }
 
-.infoForm>div{
+.infoForm>div {
     display: flex;
     width: 100%;
     gap: 1rem;
     height: 2rem;
 }
-.infoButton{
+
+.infoButton {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 20px;
     padding-right: 20px;
     align-self: flex-end;
 }
-.authform{
-    background: var(--cardColor);
+
+.authform {
+    /* background: var(--cardColor); */
     border-radius: 1rem;
     padding: 1rem;
 }
-.authform{
+
+.authform {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,7 +82,7 @@
     text-align: center;
 }
 
-.cp{
+.cp {
     display: flex;
     flex-wrap: wrap;
     align-self: flex-end;
@@ -78,8 +90,18 @@
 
 
 @media (max-width: 700px) {
-    .Auth{
+    .a-right {
+        width: 85vw;
+    }
+
+    .a-right input {
+        width: 20px;
+        font-size: 11px;
+    }
+
+
+    .Auth {
         display: flex;
         flex-wrap: wrap;
     }
-  }
+}

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import "./Post.css";
 import Comment from "../../../img/comment.png";
 import Share from "../../../img/share.png";
@@ -6,12 +6,24 @@ import Heart from "../../../img/like.png";
 import NotLike from "../../../img/notlike.png";
 import { likePost } from "../../../api/LikePost";
 import { useSelector } from "react-redux";
+import axios from "axios";
 
 const Post = ({ data }) => {
   console.log(data);
   const { user } = useSelector((state) => state.authReducer.authData);
   const [liked, setLiked] = useState(data.likes.includes(user._id));
   const [likes, setLikes] = useState(data.likes.length)
+
+  useEffect(() => {
+    axios
+      .get(`http://localhost:5000/post/{data._id}`)
+      .then(response => {
+        console(response.data.likes);
+      })
+      .catch(error => {
+        console.log(error);
+      });
+  }, []);
 
   
   const handleLike = () => {
@@ -27,14 +39,14 @@ const Post = ({ data }) => {
       />
 
       <div className="postReact">
-        <img
-          src={liked ? Heart : NotLike}
+        <img className="like-unlike"
+          src={liked ? Heart : "https://icons-for-free.com/iconfiles/png/512/heart-131965017458786724.png"}
           alt=""
           style={{ cursor: "pointer" }}
           onClick={handleLike}
         />
-        <img src={Comment} alt="" />
-        <img src={Share} alt="" />
+        {/* <img src={Comment} alt="" />
+        <img src={Share} alt="" /> */}
       </div>
 
       <span style={{ color: "var(--gray)", fontSize: "12px" }}>

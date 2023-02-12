@@ -5,7 +5,7 @@ import "./ProfileCenter.css"
 
 const ProfileCenter = () => {
   return (
-    <div className='ProfileCenter'>
+    <div className='ProfileCenter visi-adj-profile-center'>
         <ProfileCard location="profilePage"/>
 
         <PostSide/>

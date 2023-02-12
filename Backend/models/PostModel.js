@@ -12,6 +12,9 @@ const PostSchema = mongoose.Schema(
         likes: [],
         image: {
             type: String
+        },
+        name:{
+            type: String
         }
     },
     { timestamps: true } //it will add 2 fiels "created at" and "updated at" in database so no need for doing manually

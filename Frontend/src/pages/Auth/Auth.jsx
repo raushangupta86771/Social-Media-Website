@@ -41,13 +41,6 @@ const Auth = () => {
     return (
         // left side
         <div className='Auth'>
-            <div className="a-left">
-                <img className='logo' src={Logo} alt="" />
-                <div className="webname">
-                    <h1 className='name'>iMedia</h1>
-                    <h4>Connect with your mate</h4>
-                </div>
-            </div>
 
             {/* right side */}
             <div className='a-right'>
@@ -78,8 +71,8 @@ const Auth = () => {
                             {isSignup ? "Already have an account. Login!" : "Don't have an Account? Sign up"}</span>
                     </div>
 
-                    <button className="button infoButton" type="submit" disabled={loading}>
-                        {loading ? "Loading..." : isSignup ? "Sign up" : "Log in"}</button>
+                    <button className="button infoButton" type="submit">
+                        {isSignup ? "Sign up" : "Log in"}</button>
                     {/* //agar loading true hai to Loading.. dikhao warna second condition check karo */}
                 </form>
             </div>

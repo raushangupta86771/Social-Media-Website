@@ -7,9 +7,10 @@ import RightSide from "../../components/RightSide/RightSide"
 const Profile = () => {
   return (
     <div className='Profile'>
-        <ProfileLeft/>
+        
         <ProfileCenter/>
-        <RightSide/>
+        <ProfileLeft/>
+        {/* <RightSide/> */}
     </div>
   )
 }

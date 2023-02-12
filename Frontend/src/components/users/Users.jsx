@@ -29,11 +29,11 @@ const Users = ({ person }) => {
                 <div>
                     <img src={person.profilePicture ? serverPublic + person.profilePicture : serverPublic + "defaultprofile.jpg"} alt="Image" className='followerImg' />
                     <div className='name'>
-                        <span className='realname'>{person.firstname} {person.lastname}</span>
-                        <span>{person.username}</span>
+                        <span className='realname name-col'>{person.firstname} {person.lastname}</span>
+                        <span className='name-col'>{person.username}</span>
                     </div>
                 </div>
-                <div className="followBtn">
+                <div className="">
                     <button onClick={handleFollow} className={following ? "button fc-button UnfollowButton" : "button fc-button"}>{following ? "Unfollow" : "Follow"}</button>
                 </div>
             </div>

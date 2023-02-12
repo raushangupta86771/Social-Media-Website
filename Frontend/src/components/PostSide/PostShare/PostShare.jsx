@@ -9,12 +9,14 @@ import { UilTimes } from "@iconscout/react-unicons"  //for "x" sign after select
 import { useState } from 'react'
 import { useRef } from 'react'
 import { useSelector, useDispatch } from "react-redux"
-import { uploadImage,uploadPost } from '../../../actions/UploadActions'
+import { uploadImage, uploadPost } from '../../../actions/UploadActions'
+import { Link, NavigationType, useNavigate } from 'react-router-dom'
+import { Scrollbars } from 'react-custom-scrollbars';
 
 const PostShare = () => {
   const serverPublic = process.env.REACT_APP_PUBLIC_FOLDER; //for accesseing public image folder
-
-  const uploading=useSelector((state)=>state.postReducer.uploading);
+  const navigate = useNavigate();
+  const uploading = useSelector((state) => state.postReducer.uploading);
   const dispatch = useDispatch();
 
   const [image, setImage] = useState(null);
@@ -29,14 +31,19 @@ const PostShare = () => {
       setImage(img)
     }
   }
+  const forwardFollowForward = (event) => {
+    navigate('/followes');
+  }
 
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    // console.log(user) 
 
     const newPost = {
       userId: user._id, //logged in user ka _id le rhe
       desc: desc.current.value,
+      name:user.firstname
     }
 
     if (image) { //agar post me image bhi hai to usko server ke local storage me save kar rhe, FormData() ke liye google karo
@@ -58,16 +65,16 @@ const PostShare = () => {
     reset();
   }
 
-  const reset=()=>{ //after uploading we are making null field in ui
+  const reset = () => { //after uploading we are making null field in ui
     setImage(null);
-    desc.current.value="";
+    desc.current.value = "";
   }
 
   return (
     <div className='PostShare'>
       <img src={user.profilePicture ? serverPublic + user.profilePicture : serverPublic + "defaultprofile.jpg"} alt="" />
-      <div>
-        <input ref={desc} required type="text" placeholder="What's Happening ?" />
+      <div className='below-post-share'>
+        <input ref={desc} required type="text" placeholder="Post Something..." />
         <div className="postOptions">
           <div className="option" style={{ color: "var(--photo)" }} onClick={() => imageRef.current.click()}>
             {/* Above onClick means whenever we click on photo icon or photo text then it will automatically click on imageRef() which is a input type(jiski apan display none kiye hai niche)  */}
@@ -75,17 +82,25 @@ const PostShare = () => {
             Photo
           </div>
           <div className="option" style={{ color: "var(--video)" }}>
-            <UilPlayCircle />
-            Video
+            <Link className="forward-follow" to="/followes">
+              <img src='https://icon-library.com/images/followers-icon/followers-icon-1.jpg' className='adj-follow-icon' />
+            </Link>
+            <p onClick={forwardFollowForward}>Followings</p>
           </div>
-          <div className="option" style={{ color: "var(--location)" }}>
+          <div className="option adj-visibility-detail" style={{ color: "var(--video)" }}>
+            <Link className="forward-follow" to="/view-profile">
+              <img src='https://static.vecteezy.com/system/resources/previews/016/729/476/original/view-male-profile-line-color-background-icon-vector.jpg' className='adj-view adj-follow-icon' />
+            </Link>
+            {/* <p onClick={forwardFollowForward}>Followings</p> */}
+          </div>
+          {/* <div className="option" style={{ color: "var(--location)" }}>
             <UilLocationPoint />
             Location
           </div>
           <div className="option" style={{ color: "var(--shedule)" }}>
             <UilSchedule />
             Schedule
-          </div>
+          </div> */}
           <button disabled={uploading} onClick={handleSubmit} className='button btn-ps'>{uploading ? "Uploading..." : "Share"}</button>
 
           <div style={{ display: "none" }}>
