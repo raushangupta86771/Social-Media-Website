@@ -19,6 +19,12 @@ Comment on post
 View Story
 ![image](https://user-images.githubusercontent.com/97835784/232865506-634c51b6-9023-4d23-aceb-b9a5c29450e2.png)
 
+Profile Search
+![image](https://user-images.githubusercontent.com/97835784/232865829-0f9174a5-d13a-4612-bc31-0b397a1eeb3a.png)
+
+View Profile of user
+![image](https://user-images.githubusercontent.com/97835784/232865924-503f2745-3b94-4244-81f6-996b1298b63a.png)
+
 
 Uploading Post
 ![image](https://user-images.githubusercontent.com/97835784/218321586-13290fe1-7d07-4851-901d-6e394a760779.png)
