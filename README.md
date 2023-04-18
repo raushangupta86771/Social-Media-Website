@@ -2,17 +2,17 @@
 https://funny-syrniki-6a9046.netlify.app/
 A MERN dynamic social media website like Instagram. where user can login, sign up, Can share their posts, follow each other, likes the post, update their profile.
 
-Signup Page
-![image](https://user-images.githubusercontent.com/97835784/218319984-b416ce46-d8d4-4a9b-98ad-b847c7a273de.png)
-
-Login Page
-![image](https://user-images.githubusercontent.com/97835784/218320030-7c8cc7c5-97f4-44a6-89ce-680401bbcc9f.png)
-
 Home Page
 ![image](https://user-images.githubusercontent.com/97835784/232865173-b04dde89-c1f2-4f59-8588-2eb1a931ef70.png)
 
 Comment on post
 ![image](https://user-images.githubusercontent.com/97835784/232865315-15088211-7e6d-4d3d-ba42-d6bde89e47c8.png)
+
+Signup Page
+![image](https://user-images.githubusercontent.com/97835784/218319984-b416ce46-d8d4-4a9b-98ad-b847c7a273de.png)
+
+Login Page
+![image](https://user-images.githubusercontent.com/97835784/218320030-7c8cc7c5-97f4-44a6-89ce-680401bbcc9f.png)
 
 ![image](https://user-images.githubusercontent.com/97835784/232865374-74c365c3-02e6-4e78-ace8-bbb2ab8f5be6.png)
 
