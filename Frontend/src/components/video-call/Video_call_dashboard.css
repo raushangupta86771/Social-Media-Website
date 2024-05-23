@@ -1,0 +1,88 @@
+.Video_call_dashboard {
+    position: absolute;
+    margin-top: 2rem;
+}
+
+
+/* Enhanced Video_call_dashboard.css */
+
+  
+  #login {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 80vw;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+  }
+  
+  .field_container {
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: none;
+  }
+  
+  #sign_in_button {
+    margin-top: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #sign_in_button:hover {
+    background-color: #0056b3;
+  }
+  
+  .button_text {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .login_link {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: text-decoration 0.3s ease;
+  }
+  
+  .login_link:hover {
+    text-decoration: underline;
+  }
+  
+  #chrome_web_store {
+    opacity: 0.8;
+    margin-top: 20px;
+  }
+  
+  #chrome_ad_link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    transition: text-decoration 0.3s ease;
+  }
+  
+  #chrome_ad_link:hover {
+    text-decoration: underline;
+  }
+  
+  #dont_have_an_account {
+    margin-top: 30px;
+    font-size: 14px;
+  }
+  
+  /* Add more styles and enhancements as needed */
+  

@@ -1,0 +1,44 @@
+.InfoCard{
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    background: var(--cardColor);
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 90%;
+    margin-top: 1rem;
+}
+
+.infoHead{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.infoHead>svg{
+    width: 1.3rem;
+    color: rgb(241, 132, 43);
+    cursor: pointer;
+}
+.infoHead>svg:hover{
+    color: darkseagreen;
+}
+
+.logout{
+    width: 6rem;
+    height: 2rem;
+    margin-top: 4rem;
+    align-self: flex-end;
+}
+
+@media only screen and (max-width: 767px)
+{
+    .InfoCard
+    {
+        justify-content: center;
+        /* margin: auto; */
+        width: 65%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

@@ -1,0 +1,70 @@
+:root {
+  --yellow: #f5c32c;
+  --orange: #fca61f;
+  --black: #242d49;
+  --gray: rgba(36, 45, 73, 0.65);
+  --profileShadow: 0px 4px 17px 2px rgba(0, 0, 0, 0.25);
+  --hrColor: #cfcdcd;
+  --cardColor: rgba(255, 255, 255, 0.64);
+  --buttonBg: linear-gradient(98.63deg, #f9a225 0%, #f95f35 100%);
+  --inputColor: rgba(40, 52, 62, 0.07);
+  --photo: #4CB256;
+  --video: #4A4EB7;
+  --location: #EF5757;
+  --shedule: #E1AE4A;
+}
+
+.App {
+  overflow: hidden;
+  color: var(--black);
+  background-image: radial-gradient(circle, rgba(221, 232, 217, 0.2), rgba(232, 245, 236, 0.2), rgba(215, 245, 234, 0.2), rgba(215, 249, 244, 0.2), rgba(207, 246, 248, 0.2));
+
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+  padding: 1rem 1rem;
+  width: 95%;
+  margin: auto;
+}
+
+.adj-top {
+  display: flex;
+  margin-bottom: 1rem;
+  justify-content: flex-start;
+}
+
+@media only screen and (max-width: 767px) {
+  .adj-top {
+    display: block !important;
+  
+  }
+}
+
+
+
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(242, 241, 241);
+  border: none;
+  cursor: pointer;
+  border-radius: 0.7rem;
+  background-color: rgb(173, 99, 242);
+  transition: all 100ms ease-out;
+}
+
+.button:hover {
+  cursor: pointer;
+  background: transparent;
+  color: var(--orange);
+  border: 1px solid var(--orange);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.button:disabled {
+  background: silver;
+  pointer-events: none;
+}

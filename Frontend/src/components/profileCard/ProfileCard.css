@@ -1,0 +1,107 @@
+.ProfileCard {
+    /* height: 6px; */
+    margin-top: 10px;
+    display: flex;
+    border-radius: 1.5rem;
+    flex-direction: column;
+    position: relative;
+    overflow-x: clip;
+    padding: 1rem;
+    /* background-image: radial-gradient(circle, #f3faf0, #e7f6eb, #c0ebdc, #cffaf5, #9bedf2); */
+    /* background: url(https://dl.dropbox.com/s/mpmu0gjtxv2x3fs/Webp.net-resizeimage%20%281%29.jpg?raw=1) no-repeat center center fixed; */
+    background:linear-gradient(to top right, #EEBE6C 0%, #CA7C4E 100%);
+    background-size: cover;
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    /* opacity: .3; */
+    color: black;
+}
+
+.profileImages {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profileImages>img:nth-of-type(1) {
+    width: 100%;
+    height: 8rem;
+}
+
+.profileImages>img:nth-of-type(2) {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -3rem;
+    box-shadow: var(--profileShadow);
+}
+
+.adj-edit-icon {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+
+.profileName {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    gap: 10px;
+}
+
+.profileName>span:nth-of-type(1) {
+    font-weight: bold;
+}
+
+/* follow status */
+.followStatus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+}
+
+.followStatus>hr {
+    width: 85%;
+    border: 1px solid var(--hrColor);
+}
+
+.followStatus>div {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.follow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .75rem;
+}
+
+.ProfileCard>span {
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    color: orange;
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 767px) {
+    .ProfileCard {
+        display: none !important;
+    }
+}

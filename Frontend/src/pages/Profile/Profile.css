@@ -1,0 +1,7 @@
+.Profile{
+    position: relative;
+    display: grid;
+    grid-template-columns: 28rem auto;
+    overflow: hidden;
+    gap: 1rem;
+}

@@ -1,0 +1,21 @@
+.ProfileCard_Mobile {
+    /* height: 6px; */
+    margin-top: 10px;
+    display: flex;
+    border-radius: 1.5rem;
+    flex-direction: column;
+    position: relative;
+    overflow-x: clip;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* margin: auto; */
+    /* width: 20vw; */
+    background-image: radial-gradient(circle, #dde8d9, #d0ead8, #c0ebdc, #aeede5, #9bedf2); 
+}
+
+.adj-edit-center{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+
+}

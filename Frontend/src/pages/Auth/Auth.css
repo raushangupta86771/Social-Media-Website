@@ -1,0 +1,107 @@
+.Auth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 4rem;
+    position: relative;
+}
+
+.Auth>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.a-right {
+    background-image: radial-gradient(circle, #fbd8f0, #e4dafb, #c9ddfd, #b4dff4, #abdfe2);
+    border-radius: 12px;
+}
+
+.a-left {
+    gap: 2rem;
+}
+
+.a-left>img {
+    display: flex;
+    align-self: flex-start;
+}
+
+.logo {
+    margin-top: 2rem;
+    width: 4rem;
+}
+
+.name {
+    color: orange;
+}
+
+.infoForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.info {
+    border: none;
+    outline: none;
+    /* background-color: var(--inputColor); */
+    border-radius: 8px;
+    padding: 20px;
+    flex: 1;
+}
+
+.infoForm>div {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    height: 2rem;
+}
+
+.infoButton {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-self: flex-end;
+}
+
+.authform {
+    /* background: var(--cardColor); */
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.authform {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+.cp {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: flex-end;
+}
+
+
+@media (max-width: 700px) {
+    .a-right {
+        width: 85vw;
+    }
+
+    .a-right input {
+        width: 20px;
+        font-size: 11px;
+    }
+
+
+    .Auth {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

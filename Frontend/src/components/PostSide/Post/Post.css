@@ -1,0 +1,35 @@
+.Post{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background: var(--cardColor);
+    border-radius: 1rem;
+    gap: 1rem;
+}
+.like-unlike{
+    width: 2rem;
+    height: 2rem;
+}
+
+.Post>img{
+    width: 100%;
+    max-height: 20rem;
+    object-fit: cover;
+    border-radius: .7rem;
+}
+
+.postReact{
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+@media only screen and (max-width: 767px){
+    .Post{
+        width: 20rem;
+        /* justify-content: center; */
+        margin: auto !important;
+        position: relative;
+        right: 3rem;
+    }
+}

@@ -1,0 +1,23 @@
+.Home {
+    position: relative;
+    display: grid;
+    grid-template-columns:25rem auto  ;
+    gap: 1rem;
+    
+}
+
+.adj-text-color{
+    color: crimson;
+}
+
+@media (orientation: portrait) {
+    .Home {
+        grid-template-columns: auto;
+    }
+}
+
+@media (orientation: 500px) {
+    .Home {
+        grid-template-columns: auto;
+    }
+}
